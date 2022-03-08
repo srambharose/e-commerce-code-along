@@ -338,3 +338,106 @@ a {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+
+.announcements {
+  padding: 10px 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+}
+
+.slideOutNav {
+  display: none;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+}
+
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(8, 75, 109, 0.08);
+  background-color: #fff;
+}
+.navBar.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+.navBar .searchCart,
+.navBar .bagIcon {
+  margin-right: 15px;
+}
+.navBar .logo {
+  margin-left: 60px;
+}
+.navBar .counter p {
+  width: 24px;
+  height: 24px;
+  background-color: #084b6d;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+}
+.navBar input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+.navBar input[type=checkbox]:checked ~ .slideOutNav {
+  left: 0;
+}
+.navBar input[type=checkbox]:focus + label {
+  border: 1px dotted #084b6d;
+}
+.navBar label {
+  cursor: pointer;
+}
+.navBar .slideOutNav {
+  padding: 35px 50px;
+  width: 100%;
+  max-width: 506px;
+  height: 100vh;
+  border-right: 1px solid #f4fcff;
+  background-color: #084b6d;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: -506px;
+  z-index: 20px;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.navBar .slideOutNav .buttonContainer {
+  border: 1px solid white;
+}
+.navBar .slideOutNav .buttonContainer button {
+  color: #fff;
+  background-color: transparent;
+  font-size: 1.2rem;
+  font-family: "Jakarta Sans";
+}
+.navBar .slideOutNav hr {
+  width: 24px;
+  height: 2px;
+  margin: 36px 0;
+  background-color: #fff;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
