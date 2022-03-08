@@ -339,6 +339,12 @@ a {
   transition: 0.3s;
 }
 
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 .announcements {
   padding: 10px 0;
   text-align: center;
@@ -436,8 +442,22 @@ a {
   background-color: #fff;
 }
 
-.wrapper {
-  max-width: 1260px;
-  width: 90%;
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .headerImgContainer {
+  width: 45%;
+}
+header .headerImgContainer img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+header .headerContent {
+  width: 55%;
+}
+header .headerContent .contentContainer {
   margin: 0 auto;
+  width: 65%;
 }
