@@ -1,0 +1,39 @@
+footer {
+    background-color: $primary;
+    color: $solidWhite;
+    padding: 90px 0 50px 0;
+    
+    .footerFlexContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    h4 {
+        color: $solidWhite;
+    }
+
+    .newsletter {
+        margin-right: 50px;
+        width: calc(40% - 50px);
+
+        form {
+            position: relative;
+        }
+
+        input {
+            background-color: transparent;
+            color: $solidWhite;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            height: 60px;
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+            padding: 18px 20px;
+            margin-bottom: 20px;
+            width: 100%;
+            &:focus {
+                border: 2px solid $solidWhite;
+            }
+        }
+    }
+}

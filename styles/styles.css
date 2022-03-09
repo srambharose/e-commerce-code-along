@@ -461,3 +461,42 @@ header .headerContent .contentContainer {
   margin: 0 auto;
   width: 65%;
 }
+
+footer {
+  background-color: #084b6d;
+  color: #fff;
+  padding: 90px 0 50px 0;
+}
+footer .footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+footer h4 {
+  color: #fff;
+}
+footer .newsletter {
+  margin-right: 50px;
+  width: calc(40% - 50px);
+}
+footer .newsletter form {
+  position: relative;
+}
+footer .newsletter input {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  height: 60px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+footer .newsletter input:focus {
+  border: 2px solid #fff;
+}
